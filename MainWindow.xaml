@@ -1,0 +1,63 @@
+﻿<Window x:Class="ElectionWebScraper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElectionWebScraper"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="900">
+    <Border Padding="25" Background="Black">
+        <Grid Name="grid" Background="White">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="Election Data" FontFamily="Serif" FontWeight="Bold" FontSize="50" VerticalAlignment="Center" HorizontalAlignment="Center" Name="Title"/>
+            <StackPanel Grid.Row="1">
+                <TextBlock Text="Enter a constituency:" FontFamily="Serif" FontSize="30" HorizontalAlignment="Center" Name="EnterText"/>
+                <TextBox Text="All" Width="300" HorizontalAlignment="Center" FontFamily="Serif" FontSize="20" Name="EnterBox"/>
+                <Button Content="Search" Width="100" FontFamily="Serif" FontSize="15" Name="SearchButton" Click="SearchButton_OnClick"/>
+                <TextBlock Text="" FontFamily="Serif" FontSize="15" HorizontalAlignment="Center" Name="InvalidText"/>
+            </StackPanel>
+            <StackPanel Grid.Row="2" Orientation="Horizontal">
+                <StackPanel Width="200" Orientation="Vertical">
+                    <TextBlock Text="Candidate:" FontFamily="Serif" FontSize="20" Name="CandidateText"/>
+                    <TextBlock Text="" FontFamily="Serif" FontSize="15" Name="Can1"/>
+                    <TextBlock Text="" FontFamily="Serif" FontSize="15" Name="Can2"/>
+                    <TextBlock Text="" FontFamily="Serif" FontSize="15" Name="Can3"/>
+                    <TextBlock Text="" FontFamily="Serif" FontSize="15" Name="Can4"/>
+                    <TextBlock Text="" FontFamily="Serif" FontSize="15" Name="Can5"/>
+                    <TextBlock Text="" FontFamily="Serif" FontSize="15" Name="Can6"/>
+                </StackPanel>
+                <StackPanel Width="200" Orientation="Vertical">
+                    <TextBlock Text="Party:" FontFamily="Serif" FontSize="20" Name="PartyText"/>
+                    <TextBlock Text="" FontFamily="Serif" FontSize="15" Name="Par1"/>
+                    <TextBlock Text="" FontFamily="Serif" FontSize="15" Name="Par2"/>
+                    <TextBlock Text="" FontFamily="Serif" FontSize="15" Name="Par3"/>
+                    <TextBlock Text="" FontFamily="Serif" FontSize="15" Name="Par4"/>
+                    <TextBlock Text="" FontFamily="Serif" FontSize="15" Name="Par5"/>
+                    <TextBlock Text="" FontFamily="Serif" FontSize="15" Name="Par6"/>
+                </StackPanel>
+                <StackPanel Width="200" Orientation="Vertical">
+                    <TextBlock Text="Number of Votes:" FontFamily="Serif" FontSize="20" Name="NumberText"/>
+                    <TextBlock Text="" FontFamily="Serif" FontSize="15" Name="Num1"/>
+                    <TextBlock Text="" FontFamily="Serif" FontSize="15" Name="Num2"/>
+                    <TextBlock Text="" FontFamily="Serif" FontSize="15" Name="Num3"/>
+                    <TextBlock Text="" FontFamily="Serif" FontSize="15" Name="Num4"/>
+                    <TextBlock Text="" FontFamily="Serif" FontSize="15" Name="Num5"/>
+                    <TextBlock Text="" FontFamily="Serif" FontSize="15" Name="Num6"/>
+                </StackPanel>
+                <StackPanel Width="200" Orientation="Vertical">
+                    <TextBlock Text="Percentage of Votes:" FontFamily="Serif" FontSize="20" Name="PercentageText"/>
+                    <TextBlock Text="" FontFamily="Serif" FontSize="15" Name="Per1"/>
+                    <TextBlock Text="" FontFamily="Serif" FontSize="15" Name="Per2"/>
+                    <TextBlock Text="" FontFamily="Serif" FontSize="15" Name="Per3"/>
+                    <TextBlock Text="" FontFamily="Serif" FontSize="15" Name="Per4"/>
+                    <TextBlock Text="" FontFamily="Serif" FontSize="15" Name="Per5"/>
+                    <TextBlock Text="" FontFamily="Serif" FontSize="15" Name="Per6"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>
